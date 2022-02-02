@@ -16,21 +16,23 @@
 </head>
 
 <body>
-<div class="sidenav">
-         <div class="login-main-text">
-            <h2>Application<br> JAVA EE</h2>
-            <p>Example Servlet.</p>
-            <br>
-            <%= new Date() %>
-         </div>
-      </div>
-      <div class="main">
-         <div class="col-md-6 col-sm-12">
-            <div class="login-form">
-               <h1>adae ${user}</h1>
-            </div>
-         </div>
-      </div>
+	<div class="sidenav">
+		<div class="login-main-text">
+			<h2>
+				Application<br>Java EE
+			</h2>
+			<p>Example</p>
+			<br>
+			<%= new Date() %>
+		</div>
+	</div>
+	<div class="main">
+		<div class="col-md-6 col-sm-12">
+			<div class="login-form">
+				<h1>Hello Struts 2!</h1>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
