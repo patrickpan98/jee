@@ -1,4 +1,6 @@
 <%@page import="java.util.Date" %>
+<%@ taglib uri="/struts-tags" prefix="s"%>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -21,15 +23,14 @@
 			<h2>
 				Application<br>Java EE
 			</h2>
-			<p>Example</p>
 			<br>
-			<%= new Date() %>
+			<%= new Date()%>
 		</div>
 	</div>
 	<div class="main">
 		<div class="col-md-6 col-sm-12">
 			<div class="login-form">
-				<h1>Hello Struts 2!</h1>
+				<h1><a href="<s:url action="hello"/>">Hello Struts 2!</a></h1>
 			</div>
 		</div>
 	</div>
