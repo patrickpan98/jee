@@ -5,7 +5,7 @@ public class MessageStore {
 	private String message;
 	
 	public MessageStore() {
-		message = "Hello Struts 2! (MessageStore)";
+		message = "Default message";
 	}
 	
 	public String getMessage() {
@@ -15,6 +15,13 @@ public class MessageStore {
 	public void setMessage(String message) {
 		this.message = message;
 	}
+
+	@Override
+	public String toString() {
+		return "MessageStore [message=" + message + "]";
+	}
+	
+	
 	
 	
 }
