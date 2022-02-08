@@ -82,14 +82,12 @@ public class EmployeeService implements IEmployeeService{
 
 	@Override
 	public Employee findById(Integer id) {
-		
 		return dao.findById(id);
 	}
 
 	@Override
 	public List<Employee> findAll() {
-		List<Employee> list = dao.findAll();
-		return list;
+		return dao.findAll();
 	}
 	/*****************************/
 	

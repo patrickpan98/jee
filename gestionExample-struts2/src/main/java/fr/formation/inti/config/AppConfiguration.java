@@ -15,9 +15,10 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = {"fr.formation.inti.service", "fr.formation.inti.dao"})
+@ComponentScan(basePackages = {"fr.formation.inti.*"})
 @EnableTransactionManagement(proxyTargetClass = true)
 @PropertySource("classpath:ds-hibernate-cfg.properties")
 public class AppConfiguration {
@@ -64,6 +65,16 @@ public class AppConfiguration {
 		
 		return transactionManager;
 	}
+	
+	@Bean(name="viewResolver")
+	public InternalResourceViewResolver getViewResolver() {
+		InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
+		viewResolver.setPrefix("/WEB-INF/pages/");
+		viewResolver.setSuffix(".jsp");
+		
+		return viewResolver;
+	}
+	
 }
 
 
