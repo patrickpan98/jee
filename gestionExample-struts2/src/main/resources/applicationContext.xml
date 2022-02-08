@@ -10,8 +10,8 @@
 	
 	<!-- dans bean, scope="prototype" ou "singleton" (par défaut) -->
 	<!-- dans bean, autowire="byType" (par défaut), "byName"... -->
-	<bean id="serviceEmployee" class="fr.formation.inti.service.EmployeeService" autowire="byType">
-		<!--<property name="dao" ref="daoEmployee"/>-->
+	<bean id="serviceEmployee" class="fr.formation.inti.service.EmployeeService">
+		<property name="dao" ref="daoEmployee"/>
 		<!--<property name="message" value="example inject value"/>-->
 		<!--<constructor-arg name="dao" ref="daoEmployee"/>-->
 	</bean>
