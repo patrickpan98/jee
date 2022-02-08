@@ -19,8 +19,7 @@
 <div class="sidenav">
          <div class="login-main-text">
             <h2>Application<br> JAVA EE</h2>
-            <p>Example Servlet.</p>
-            <br>
+            <p>Example Servlet.</p><br>
             <%= new Date() %>
          </div>
       </div>
